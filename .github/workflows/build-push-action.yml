@@ -3,7 +3,7 @@ name: Build and Push Container
 
 on:
   schedule:
-    - cron: '12 * * * *'
+    - cron: '28 * * * *'
   push:
     branches: [ master ]
     # Publish semver tags as releases.
