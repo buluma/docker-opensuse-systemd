@@ -1,9 +1,8 @@
 Docker OpenSUSE Systemd
 =======================
+[![Build and Push Container](https://github.com/buluma/docker-opensuse-systemd/actions/workflows/build-push-action.yml/badge.svg)](https://github.com/buluma/docker-opensuse-systemd/actions/workflows/build-push-action.yml)
 
 This Dockerfile can build containers capable to use systemd.
-
-[![opensuse build status](https://img.shields.io/docker/cloud/build/robertdebock/opensuse.svg)](https://hub.docker.com/repository/docker/robertdebock/opensuse)
 
 Branches
 --------
@@ -22,5 +21,5 @@ docker run \
   --tty \
   --privileged \
   --volume /sys/fs/cgroup:/sys/fs/cgroup:ro \
-  robertdebock/opensuse
+  buluma/docker-opensuse-systemd
 ```
