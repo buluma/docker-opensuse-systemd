@@ -114,4 +114,4 @@ jobs:
           file: Dockerfile
           platforms: linux/amd64
           push: true
-          tags: ${{ github.repository }}:systemd
+          tags: ${{ github.repository }}:systemd, ${{ github.repository }}:latest, ${{ github.repository }}:15.4
