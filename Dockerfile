@@ -5,7 +5,7 @@ LABEL build_date="2022-01-12"
 
 ENV container=docker
 
-RUN zypper install -y sudo dbus-1 systemd-sysvinit && \
+RUN zypper install -y sudo python3 dbus-1 systemd-sysvinit && \
     cd /usr/lib/systemd/system/sysinit.target.wants/; \
     for i in *; do [ $i = systemd-tmpfiles-setup.service ] || rm -f $i; done ; \
     rm -f /usr/lib/systemd/system/multi-user.target.wants/* ; \
